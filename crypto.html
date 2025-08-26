@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tangem Help Center</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -68,7 +69,7 @@
       border-radius: 2px;
     }
 
-    /* === HEADER === */
+    /* === HERO === */
     header {
       text-align: center;
       padding: 60px 20px 20px;
@@ -83,13 +84,6 @@
       font-size: 16px;
       opacity: 0.8;
       margin: 0;
-    }
-
-    .support-number {
-      color: #57a1ff;
-      font-size: 32px;
-      font-weight: bold;
-      margin-top: 10px;
     }
 
     /* === SECTION WRAPPER === */
@@ -131,12 +125,16 @@
     }
 
     .topic-icon {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       margin-right: 15px;
       margin-top: 5px;
       background-color: #57a1ff;
       border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
     }
 
     .topic-content h3 {
@@ -148,6 +146,31 @@
       margin: 5px 0 0;
       font-size: 14px;
       color: #aaa;
+    }
+
+    /* === HELP CENTER SECTION (footer ke upar) === */
+    .help-center {
+      background: #0b0f2f;
+      padding: 30px 20px;
+      text-align: left;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .help-center h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #57a1ff;
+    }
+
+    .help-center p {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    .help-center i {
+      margin-right: 8px;
+      color: #57a1ff;
     }
 
     /* === FOOTER === */
@@ -187,9 +210,6 @@
       header h1 {
         font-size: 36px;
       }
-      .support-number {
-        font-size: 24px;
-      }
     }
   </style>
 </head>
@@ -215,14 +235,12 @@
   <header>
     <p>We're here to help</p>
     <h1>Help Center</h1>
-    <p>For Technical support:</p>
-    <div class="support-number">+1(0000000000)</div>
+    <p>For Technical support</p>
+    <h2>+1(00000000)</h2>
   </header>
 
   <!-- === MAIN CONTENT === -->
   <div class="wrapper">
-
-    <!-- CTA Blocks -->
     <div class="cta-block">
       <h2>Get started.</h2>
       <p>Easy set up Tangem and start using it.</p>
@@ -241,7 +259,7 @@
 
     <!-- Topics -->
     <div class="topic">
-      <div class="topic-icon"></div>
+      <div class="topic-icon"><i class="fas fa-play"></i></div>
       <div class="topic-content">
         <h3>Getting started</h3>
         <p>Everything you need to know to begin using your Tangem wallet</p>
@@ -249,7 +267,7 @@
     </div>
 
     <div class="topic">
-      <div class="topic-icon"></div>
+      <div class="topic-icon"><i class="fas fa-book"></i></div>
       <div class="topic-content">
         <h3>General</h3>
         <p>All about Tangem products and the main features of their use</p>
@@ -257,7 +275,7 @@
     </div>
 
     <div class="topic">
-      <div class="topic-icon"></div>
+      <div class="topic-icon"><i class="fas fa-shield-alt"></i></div>
       <div class="topic-content">
         <h3>Security</h3>
         <p>The main thing about the security of Tangem products</p>
@@ -265,7 +283,7 @@
     </div>
 
     <div class="topic">
-      <div class="topic-icon"></div>
+      <div class="topic-icon"><i class="fas fa-coins"></i></div>
       <div class="topic-content">
         <h3>Coins & Tokens</h3>
         <p>Answers to questions about support for tokens and blockchains</p>
@@ -273,7 +291,7 @@
     </div>
 
     <div class="topic">
-      <div class="topic-icon"></div>
+      <div class="topic-icon"><i class="fas fa-exchange-alt"></i></div>
       <div class="topic-content">
         <h3>Fund transfers</h3>
         <p>Everything about transferring funds using Tangem wallets</p>
@@ -281,14 +299,15 @@
     </div>
 
     <div class="topic">
-      <div class="topic-icon"></div>
+      <div class="topic-icon"><i class="fas fa-mobile-alt"></i></div>
       <div class="topic-content">
         <h3>App Functionality</h3>
         <p>The main information about the functionality of the Tangem application</p>
       </div>
     </div>
-
   </div>
+
+
 
   <!-- === FOOTER === -->
   <footer>
@@ -301,4 +320,9 @@
         Global Headquarters, Tangem AG<br>
         Baarerstrasse 10, 6300 Zug, Switzerland
       </p>
-      <p><a href="mailto:support@tangem.com">support@tangem.com</
+      <p><a href="mailto:support@tangem.com">support@tangem.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
